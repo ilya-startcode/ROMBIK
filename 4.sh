@@ -4,9 +4,9 @@ size=$1
 
 #first part of the romb
 cnt_up=1
-for ((number=0;number<"$1";number++))
+for ((number=0;number<size;number++))
 {
-	for ((a=0;a<(($1-cnt_up));a++))
+	for ((a=0;a<((size-cnt_up));a++))
 	{
 		echo -n " "
 	}
@@ -22,7 +22,7 @@ for ((number=0;number<"$1";number++))
 
 #second part of the romb
 cnt_down=size-1
-for ((number=0;number<=(($1-1));number++))
+for ((number=0;number<=((size-1));number++))
 {
 	for ((c=0;c<((size-cnt_down));c++))
 	{
