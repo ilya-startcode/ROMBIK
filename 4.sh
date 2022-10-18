@@ -2,14 +2,14 @@
 
 if [ "$#" -ne "1" ]; then
 	echo "ERROR: Invalid number of arguments"
-	echo "Syntax example: ./fourh.sh <your_int_num> "
+	echo "Syntax example: ./4.sh <your_int_num> "
 	exit 1
 fi
 
 int_regex='^[0-9]+$'
 if ! [[ $1 =~ $int_regex ]]; then
 	echo "ERROR: Argument must be integer"
-	echo "Syntax example: ./fourh.sh <your_int_num> "
+	echo "Syntax example: ./4.sh <your_int_num> "
 	exit 1
 fi
 
