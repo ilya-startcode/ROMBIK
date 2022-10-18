@@ -1,6 +1,6 @@
 #!/bin/bash
 
-max_rmb_size=$1
+size=$1
 
 #first part of the romb
 cnt_up=1
@@ -21,10 +21,10 @@ for ((number=0;number<"$1";number++))
 }
 
 #second part of the romb
-cnt_down=max_rmb_size-1
+cnt_down=size-1
 for ((number=0;number<=(($1-1));number++))
 {
-	for ((c=0;c<((max_rmb_size-cnt_down));c++))
+	for ((c=0;c<((size-cnt_down));c++))
 	{
 		echo -n " "
 	}
