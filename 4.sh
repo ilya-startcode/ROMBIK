@@ -2,6 +2,11 @@
 
 size=$1
 
+if(($1<1))
+{
+        echo "Size must be more 1"
+        exit 1
+}
 #first part of the romb
 cnt_up=1
 for ((number=0;number<size;number++))
