@@ -23,12 +23,9 @@ if [ $# -eq 0 ]; then
 fi
 
 size=$1
-#let size_1=( $size - 1 )
-#let size_2=( $size - 2 )
-#declare two arrays
-#one keeps the numbers of the chairs
+#keeps the numbers of the chairs
 declare -a chair_numbers
-#the second one will record the patient sequence numbers
+#record the patient sequence numbers
 declare -a massive
 #fill the first array with chair numbers
 for ((i=0;i<size;i++)); do
