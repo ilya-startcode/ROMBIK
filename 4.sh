@@ -1,8 +1,8 @@
 #!/bin/bash
 size=$1
 #check correct user input
-if [ "1" -gt "$1" ]; then
-        echo "error: size must be more 1"
+if [ "0" -gt "$1" ]; then
+        echo "error: size must be more 0"
         exit 1
 fi
 
