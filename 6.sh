@@ -4,7 +4,7 @@ if [ "$#" -ne "1" ]; then
 	exit 1
 fi
 
-if [ "2" -gt "$1" ]; then 
+if [ "3" -gt "$1" ]; then 
         echo "ERROR: count of chairs must be more 2"
 	exit 1
 fi
