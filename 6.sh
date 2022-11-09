@@ -4,6 +4,11 @@ if [ "$#" -ne "1" ]; then
 	exit 1
 fi
 
+if [ "0" -gt "$1" ]; then 
+        echo "ERROR: count of chairs must be more 0"
+	exit 1
+fi
+
 if ! [[ $1 =~ ^[0-9]+$ ]]; then
   echo "ERROR: Not a number"
   exit 1
