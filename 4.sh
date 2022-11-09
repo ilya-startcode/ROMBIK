@@ -1,7 +1,7 @@
 #!/bin/bash
 
 size=$1
-
+#check correct user input
 if [ "$#" -ne "1" ]; then
 	echo "error: size must be more 1"
 	exit 1
